@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="@viljamis">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Vue Design System on a static website</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script src="/node_modules/vue-design-system/dist/system/system.js"></script>
+  <link href="/node_modules/vue-design-system/dist/system/system.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html,
+    body,
+    #app {
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <Index />
+    <!-- use your design system components here -->
+  </div>
+  <script>
+    new Vue({
+      el: '#app'
+    })
+  </script>
+</body>
+</html>
